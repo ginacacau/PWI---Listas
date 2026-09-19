@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2e6ff;
+    color: #333;
+}
+
+header {
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+.exercicio {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #d8bde8;
+}
+
+.exercicio h2 {
+    color: #8e44ad;
+}
+
+.conteudo {
+    background-color: #faf5ff;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.conteudo h3 {
+    color: #8e44ad;
+    font-size: 28px;
+}
+
+a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e74c3c;
+}
+
+a:visited {
+    color: #9b59b6;
+}
+
+.intro {
+    color: #e84393;
+    text-align: center;
+}
+
+.descricao {
+    color: #3498db;
+    text-align: left;
+}
+
+.colunas {
+    text-align: center;
+}
+
+.coluna {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #9b59b6;
+    background-color: #faf5ff;
+    text-align: left;
+}
+
+.coluna h3 {
+    color: #8e44ad;
+}
+
+.caixa {
+    margin: 25px;
+    padding: 20px;
+    border: 2px solid #e84393;
+    background-color: #fff0f7;
+}
+
+footer {
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
