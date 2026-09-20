@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #315c72;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 5px solid #234555;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #315c72;
+}
+
+
+
+main {
+    width: 95%;
+    margin: 30px auto;
+}
+
+
+
+.galeria {
+    width: 75%;
+    float: left;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #bbb;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+.coluna {
+    width: 30%;
+    margin-right: 3.5%;
+    float: left;
+}
+
+.coluna:last-child {
+    margin-right: 0;
+}
+
+
+
+.imagem {
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 2px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 3px 8px #ccc;
+    overflow: hidden;
+    display: block;
+}
+
+
+/* IMAGEM */
+
+.imagem img {
+    display: block;
+
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    transition: transform 0.3s;
+}
+
+
+
+.legenda {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+
+
+.imagem:hover {
+    border-color: #315c72;
+
+    box-shadow: 0 5px 15px #888;
+}
+
+.imagem:hover img {
+    transform: scale(1.08);
+}
+
+.imagem:hover .legenda {
+    opacity: 1;
+}
+
+
+aside {
+    width: 22%;
+    float: right;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 2px solid gray;
+    box-shadow: #315c72;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+
+footer {
+    clear: both;
+    background-color: #315c72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.container{
+    margin: 20px;
+    padding: 25px;
+    background-color: #dce2e5;
+    color: black;
+}
+
+.container h2 {
+    text-align: center;
+    color: #234555;
+}
+
+.container ul{
+
+    color: darkblue;
+    text-align: center;
+}
+
+.container h3 {
+    margin:auto;
+    
+}
+
+   
