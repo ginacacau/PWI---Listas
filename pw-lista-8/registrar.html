@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftsy - Registrar</title>
+
+    <link rel="stylesheet" href="css/styleregistrar.css">
+    <link rel="stylesheet" href="login.html">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Craftsy</div>
+
+        <nav>
+            <a href="index.html">SMARTPHONES</a>
+            <a href="index.html">TABLETS</a>
+            <a href="index.html">COMPUTADORES</a>
+        </nav>
+
+        <div class="login">
+            <a href="login.html">LOGIN</a>
+            <a href="registrar.html">REGISTRAR</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <h1>REGISTRAR</h1>
+
+        <form>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Seu nome aqui">
+            <small>Obrigatório</small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@email.com">
+            <small>Obrigatório</small>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="senha">
+            <small>Obrigatório</small>
+
+            <label for="pais">País de nascimento</label>
+
+            <select id="pais">
+                <option>Chile</option>
+                <option>Brasil</option>
+                <option>Argentina</option>
+                <option>Uruguai</option>
+            </select>
+
+            <small>Obrigatório</small>
+
+            <label>Genero</label>
+
+            <div class="opcoes">
+                <label>
+                    <input type="radio" name="genero">
+                    Masculino
+                </label>
+
+                <label>
+                    <input type="radio" name="genero">
+                    Feminino
+                </label>
+
+                <label>
+                    <input type="radio" name="genero">
+                    Prefiro não dizer
+                </label>
+            </div>
+
+            <label>Hobbies</label>
+
+            <div class="opcoes">
+                <label>
+                    <input type="checkbox">
+                    Guitarra
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Futebol
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Tenis
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Programação
+                </label>
+            </div>
+
+            <label for="comentarios">Comentários</label>
+
+            <textarea id="comentarios"></textarea>
+
+            <label class="termos">
+                <input type="checkbox">
+                Aceito os termos e condições.
+            </label>
+
+            <p class="explicacao">
+                Botão enviar com tag "input"
+            </p>
+
+            <div class="botoes-input">
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Cancelar">
+            </div>
+
+            <p class="explicacao">
+                Botão enviar com tag "button"
+            </p>
+
+            <div class="botoes">
+                <button type="submit">Registrar</button>
+                <button type="button">Cancelar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

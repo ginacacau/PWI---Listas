@@ -1,0 +1,232 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+    background: #aae5f5; 
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+.site {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+
+header {
+    height: 48px;
+    background: #ff3b08; 
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-style: italic; 
+    margin-right: 35px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a,
+.login a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+nav a:hover,
+.login a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+    align-items: flex-start;
+}
+
+main {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    background: white;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.produto {
+    width: 100%;
+    background: white;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.produto h3 {
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.produto p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #666666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.produto button {
+    background: #ff3434;
+    color: white;
+    border: 0;
+    padding: 8px 14px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start; 
+    transition: background 0.2s ease;
+}
+
+.produto button:hover {
+    background: #cc2424;
+}
+
+
+aside {
+    width: 250px; 
+    flex-shrink: 0;
+}
+
+.box {
+    background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.box h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #444444;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 10px;
+}
+
+.tutorial {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #fafafa;
+}
+
+.tutorial:last-of-type {
+    border-bottom: none; /
+}
+
+.tutorial img {
+    width: 65px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.tutorial p {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #555555;
+}
+
+
+.anuncio {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.anuncio:last-of-type {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .site {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .login {
+        margin-left: 0;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    main {
+        grid-template-columns: 1fr; 
+        padding: 15px;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
